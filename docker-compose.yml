@@ -1,0 +1,163 @@
+services:
+  # MySQL 数据库
+  mysql:
+    image: mysql:8.0
+    container_name: nebulamall-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: nebulamall
+      TZ: Asia/Shanghai
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+    networks:
+      - nebulamall-network
+
+  # Redis 缓存
+  redis:
+    image: redis:7-alpine
+    container_name: nebulamall-redis
+    ports:
+      - "6380:6379"
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      timeout: 20s
+      retries: 10
+    networks:
+      - nebulamall-network
+
+  # Elasticsearch 搜索引擎
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.10.2
+    container_name: nebulamall-elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - TZ=Asia/Shanghai
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:9200 || exit 1"]
+      timeout: 20s
+      retries: 10
+    networks:
+      - nebulamall-network
+
+  # Kibana 可视化工具
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.10.2
+    container_name: nebulamall-kibana
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+      - TZ=Asia/Shanghai
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:5601 || exit 1"]
+      timeout: 20s
+      retries: 10
+    networks:
+      - nebulamall-network
+
+  # RabbitMQ 消息队列
+  rabbitmq:
+    image: rabbitmq:3.12-management-alpine
+    container_name: nebulamall-rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+      TZ: Asia/Shanghai
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      timeout: 20s
+      retries: 10
+    networks:
+      - nebulamall-network
+
+  # Nacos 配置中心和服务发现
+  nacos:
+    image: nacos/nacos-server:v2.1.2
+    container_name: nebulamall-nacos
+    environment:
+      - MODE=standalone
+      - PREFER_HOST_NAME=hostname
+      - TZ=Asia/Shanghai
+    ports:
+      - "8848:8848"
+      - "9848:9848"
+    volumes:
+      - nacos_data:/home/nacos/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8848/nacos || exit 1"]
+      timeout: 20s
+      retries: 10
+    networks:
+      - nebulamall-network
+
+  # MinIO 对象存储
+  minio:
+    image: minio/minio:latest
+    container_name: nebulamall-minio
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+      TZ: Asia/Shanghai
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio_data:/data
+    command: server /data --console-address ":9001"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      timeout: 20s
+      retries: 10
+    networks:
+      - nebulamall-network
+
+  # Seata 分布式事务
+  seata:
+    image: seataio/seata-server:1.6.1
+    container_name: nebulamall-seata
+    environment:
+      SEATA_PORT: 8091
+      SEATA_IP: seata
+      TZ: Asia/Shanghai
+    ports:
+      - "8091:8091"
+    volumes:
+      - seata_data:/seata-server/resources
+    networks:
+      - nebulamall-network
+
+volumes:
+  mysql_data:
+  redis_data:
+  elasticsearch_data:
+  rabbitmq_data:
+  nacos_data:
+  minio_data:
+  seata_data:
+
+networks:
+  nebulamall-network:
+    driver: bridge
