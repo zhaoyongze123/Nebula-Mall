@@ -6,3 +6,7 @@ spring:
       config:
         server-addr: 127.0.0.1:8848
         file-extension: yml
+        namespace: 5e64a407-b26a-47a1-af37-84f0d4ea0ef2
+        group: dev
+      discovery:
+        server-addr: 127.0.0.1:8848

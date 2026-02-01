@@ -1,14 +1,12 @@
 spring:
   application:
-    name: nebulamall-coupon
+    name: nebulamall-gateway
   cloud:
     nacos:
       config:
         server-addr: 127.0.0.1:8848
         file-extension: yml
-        namespace: c69ff5aa-300b-4bd1-8125-98346fa5fb2d
+        namespace: 52bae48c-ee9c-4552-b33f-cb901931dffe
         group: dev
       discovery:
         server-addr: 127.0.0.1:8848
-
-

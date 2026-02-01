@@ -4,13 +4,7 @@ server:
 spring:
   application:
     name: nebulamall-coupon
-  cloud:
-    nacos:
-      discovery:
-        server-addr: 127.0.0.1:8848
-      config:
-        server-addr: 127.0.0.1:8848
-        file-extension: yml
+  # 临时数据源配置（可被 Nacos 的 datasource.yml 覆盖）
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/nebulamall-sms?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
@@ -31,3 +25,9 @@ mybatis-plus:
   global-config:
     db-config:
       id-type: auto
+
+
+nebulamall:
+  user:
+    name: zyz1
+    age: 18

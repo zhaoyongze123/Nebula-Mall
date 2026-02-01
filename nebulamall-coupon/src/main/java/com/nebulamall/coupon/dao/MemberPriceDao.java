@@ -1,0 +1,17 @@
+package com.nebulamall.coupon.dao;
+
+import com.nebulamall.coupon.entity.MemberPriceEntity;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
+
+/**
+ * 商品会员价格
+ * 
+ * @author zyz
+ * @email zhaoyongze2023@gmail.com
+ * @date 2026-02-01 17:59:24
+ */
+@Mapper
+public interface MemberPriceDao extends BaseMapper<MemberPriceEntity> {
+	
+}
