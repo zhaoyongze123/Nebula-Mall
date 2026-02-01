@@ -1,69 +1,33 @@
-# Tomcat
 server:
-  tomcat:
-    uri-encoding: UTF-8
-    threads:
-      max: 1000
-      min-spare: 30
-    connection-timeout: 5000ms
-  port: 9001
-  servlet:
-    context-path: /order
+  port: 10004
 
 spring:
-  # 环境 dev|test|prod
-  profiles:
-    active: dev
   application:
     name: nebulamall-order
-  config:
-    import: optional:nacos:nebulamall-order.yml?refresh=true
-  # jackson时间格式化
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yml
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/nebulamall-oms?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
   jackson:
-    time-zone: GMT+8
-    date-format: yyyy-MM-dd HH:mm:ss
-  servlet:
-    multipart:
-      max-file-size: 100MB
-      max-request-size: 100MB
-      enabled: true
-
-  mvc:
-    throw-exception-if-no-handler-found: true
-    pathmatch:
-      matching-strategy: ANT_PATH_MATCHER
-
+    default-property-inclusion: non_null
   sql:
     init:
       mode: never
 
-  # Nacos配置
-  cloud:
-    nacos:
-      discovery:
-        server-addr: localhost:8848
-      config:
-        server-addr: localhost:8848
-        file-extension: yml
-        import-check:
-          enabled: false
-
-# MyBatis Plus
 mybatis-plus:
-  mapper-locations: classpath*:/mapper/**/*.xml
-  type-aliases-package: com.nebulamall.order.entity
+  mapper-locations: classpath:/mapper/**/*.xml
   global-config:
     db-config:
       id-type: auto
-      logic-delete-value: -1
-      logic-not-delete-value: 0
-    banner: false
-  configuration:
-    map-underscore-to-camel-case: true
-
-# Logging
-logging:
-  level:
-    root: INFO
-    com.nebulamall.order: DEBUG
-    com.alibaba.druid.pool: WARN

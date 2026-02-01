@@ -26,7 +26,7 @@ import com.common.utils.R;
  * @date 2026-02-01 17:59:24
  */
 @RestController
-@RequestMapping("coupon/smshomesubjectspu")
+@RequestMapping("coupon/homesubjectspu")
 public class SmsHomeSubjectSpuController {
     @Autowired
     private SmsHomeSubjectSpuService smsHomeSubjectSpuService;

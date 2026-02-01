@@ -26,7 +26,7 @@ import com.common.utils.R;
  * @date 2026-02-01 17:59:25
  */
 @RestController
-@RequestMapping("coupon/smsseckillskurelation")
+@RequestMapping("coupon/seckillskurelation")
 public class SmsSeckillSkuRelationController {
     @Autowired
     private SmsSeckillSkuRelationService smsSeckillSkuRelationService;

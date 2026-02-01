@@ -5,11 +5,11 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
- * 订单项
+ * 订单项信息
  * 
  * @author zyz
  * @email zhaoyongze2023@gmail.com
- * @date 2026-02-01 03:09:22
+ * @date 2026-02-01 18:35:16
  */
 @Mapper
 public interface OrderItemDao extends BaseMapper<OrderItemEntity> {
