@@ -4,41 +4,22 @@ server:
 spring:
   application:
     name: nebulamall-gateway
+  main:
+    web-application-type: reactive
   cloud:
     gateway:
       routes:
-        # Product Service
-        - id: product_route
-          uri: lb://nebulamall-product
+        # Admin Service (captcha, login, and admin APIs) - Renren-Fast
+        - id: admin_route
+          uri: http://localhost:8080
           predicates:
-            - Path=/api/product/**
+            - Path=/api/**
           filters:
-            - RewritePath=/api/(?<segment>.*), /$\{segment}
-        # Coupon Service
-        - id: coupon_route
-          uri: lb://nebulamall-coupon
-          predicates:
-            - Path=/api/coupon/**
-          filters:
-            - RewritePath=/api/(?<segment>.*), /$\{segment}
-        # Member Service
-        - id: member_route
-          uri: lb://nebulamall-member
-          predicates:
-            - Path=/api/member/**
-          filters:
-            - RewritePath=/api/(?<segment>.*), /$\{segment}
-        # Order Service
-        - id: order_route
-          uri: lb://nebulamall-order
-          predicates:
-            - Path=/api/order/**
-          filters:
-            - RewritePath=/api/(?<segment>.*), /$\{segment}
-        # Ware Service
-        - id: ware_route
-          uri: lb://nebulamall-ware
-          predicates:
-            - Path=/api/ware/**
-          filters:
-            - RewritePath=/api/(?<segment>.*), /$\{segment}
+            - RewritePath=/api/(?<segment>.*), /renren-fast/$\{segment}
+  loadbalancer:
+    nacos:
+      enabled: false
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG

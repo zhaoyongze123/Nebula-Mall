@@ -10,5 +10,7 @@ spring:
         group: dev
       discovery:
         server-addr: 127.0.0.1:8848
+        namespace: "52bae48c-ee9c-4552-b33f-cb901931dffe"
+        ip: 127.0.0.1
 
 

@@ -6,7 +6,12 @@ spring:
       config:
         server-addr: 127.0.0.1:8848
         file-extension: yml
-        namespace: 52bae48c-ee9c-4552-b33f-cb901931dffe
         group: dev
+        namespace: "52bae48c-ee9c-4552-b33f-cb901931dffe"
       discovery:
         server-addr: 127.0.0.1:8848
+        namespace: "52bae48c-ee9c-4552-b33f-cb901931dffe"
+        ip: 127.0.0.1
+  loadbalancer:
+    nacos:
+      enabled: true
