@@ -9,17 +9,19 @@ spring:
   cloud:
     gateway:
       routes:
+        # Third Party Service - MinIO and other third-party services (more specific, should be first)
+        - id: third_party_route
+          uri: lb://Nebula-third-party
+          predicates:
+            - Path=/api/thirdparty/**
+          filters:
+            - RewritePath=/api/thirdparty/(?<segment>.*), /thirdparty/$\{segment}
+        
         # Admin Service (captcha, login, and admin APIs) - Renren-Fast
         - id: admin_route
           uri: http://localhost:8080
-          predicates:
+          predicates: 
             - Path=/api/**
           filters:
             - RewritePath=/api/(?<segment>.*), /renren-fast/$\{segment}
-  loadbalancer:
-    nacos:
-      enabled: false
-
-logging:
-  level:
-    org.springframework.cloud.gateway: DEBUG
+  

@@ -22,28 +22,26 @@ public class NebulamallCorsConfiguration {
     public CorsWebFilter corsWebFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource(new PathPatternParser());
         CorsConfiguration corsConfig = new CorsConfiguration();
-        
-        // 允许的源
-        corsConfig.addAllowedOrigin("*");
-        
-        // 允许的 HTTP 方法
+
+        // 1、允许跨域的源
+        // 错误写法：corsConfig.addAllowedOrigin("*");
+        // 正确写法：使用 Pattern 可以兼容 setAllowCredentials(true)
+        corsConfig.addAllowedOriginPattern("*");
+
+        // 2、允许的 HTTP 方法
         corsConfig.addAllowedMethod("*");
-        
-        // 允许的请求头
+
+        // 3、允许的请求头
         corsConfig.addAllowedHeader("*");
-        
-        // 是否允许发送 Cookie
-        corsConfig.setAllowCredentials(false);
-        
-        // 预检请求的最大缓存时间（秒）
+
+        // 4、是否允许发送 Cookie（必须配合 OriginPattern 使用）
+        corsConfig.setAllowCredentials(true);
+
         corsConfig.setMaxAge(3600L);
-        
-        // 允许暴露的响应头
-        corsConfig.addExposedHeader("*");
-        
-        // 为所有路径应用 CORS 配置
+
+        // 为所有路径应用配置
         source.registerCorsConfiguration("/**", corsConfig);
-        
+
         return new CorsWebFilter(source);
     }
 }
