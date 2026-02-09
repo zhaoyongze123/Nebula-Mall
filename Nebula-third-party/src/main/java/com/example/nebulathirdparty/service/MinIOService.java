@@ -52,7 +52,7 @@ public class MinIOService {
             httpMethod,
             bucket,
             objectName,
-            3600,  // 1小时有效期
+            604800,  // 7天有效期（604800秒）
             null
         );
     }
@@ -62,5 +62,23 @@ public class MinIOService {
      */
     public String getPresignedObjectUrl(String objectName) throws Exception {
         return getPresignedObjectUrl(objectName, "GET");
+    }
+
+    /**
+     * 获取直接访问的 URL（不过期）
+     * 用于图片等资源的直接访问，bucket需要配置为public
+     */
+    public String getDirectAccessUrl(String objectName) throws Exception {
+        // 直接构造公开访问URL：http://endpoint/bucket/objectName
+        String normalizedEndpoint = endpoint;
+        if (normalizedEndpoint.endsWith("/")) {
+            normalizedEndpoint = normalizedEndpoint.substring(0, normalizedEndpoint.length() - 1);
+        }
+        
+        if (objectName.startsWith("/")) {
+            objectName = objectName.substring(1);
+        }
+        
+        return normalizedEndpoint + "/" + bucket + "/" + objectName;
     }
 }

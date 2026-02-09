@@ -33,11 +33,22 @@ public class AttrGroupController {
 
     /**
      * 列表
+     *
+     * 请求参数示例：
+     * {
+     * page： 1，//当前页码
+     * 1imit： 10，//每页记录数
+     * sidx：‘id‘，//排序字段
+     * order：‘asc/desc‘，//排序方式
+     * KEY： ‘华为‘//检索关键字
+     * }
      */
-    @RequestMapping("/list")
+    @RequestMapping("/list/{catelogId}")
     //@RequiresPermissions("product:attrgroup:list")
-    public R list(@RequestParam Map<String, Object> params){
-        PageUtils page = attrGroupService.queryPage(params);
+    public R list(@RequestParam Map<String, Object> params,
+                  @PathVariable("catelogId") Long catelogId){
+        //PageUtils page = attrGroupService.queryPage(params);
+        PageUtils page = attrGroupService.queryPage(params, catelogId);
 
         return R.ok().put("page", page);
     }

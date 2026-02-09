@@ -56,12 +56,13 @@ public class MinIOController {
     }
     
     /**
-     * 获取下载 URL
+     * 获取下载 URL（直接访问URL，不过期）
      */
     @GetMapping("/download/url")
     public R getDownloadUrl(@RequestParam String objectName) {
         try {
-            String url = minIOService.getPresignedObjectUrl(objectName, "GET");
+            // 使用直接访问URL而不是presigned URL，避免过期问题
+            String url = minIOService.getDirectAccessUrl(objectName);
             Map<String, Object> result = new java.util.HashMap<>();
             result.put("url", url);
             return R.ok().put("data", result);
