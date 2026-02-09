@@ -40,16 +40,27 @@ public class MinIOService {
     }
     
     /**
-     * 获取预签名 URL（用于下载）
+     * 获取预签名 URL（用于上传或下载）
      */
-    public String getPresignedObjectUrl(String objectName) throws Exception {
+    public String getPresignedObjectUrl(String objectName, String method) throws Exception {
         // MinIO 7.1.0 API
+        io.minio.http.Method httpMethod = "PUT".equalsIgnoreCase(method) 
+            ? io.minio.http.Method.PUT 
+            : io.minio.http.Method.GET;
+        
         return minioClient.getPresignedObjectUrl(
-            Method.GET,
+            httpMethod,
             bucket,
             objectName,
-            3600,
+            3600,  // 1小时有效期
             null
         );
+    }
+
+    /**
+     * 获取预签名 URL（仅用于下载，兼容旧接口）
+     */
+    public String getPresignedObjectUrl(String objectName) throws Exception {
+        return getPresignedObjectUrl(objectName, "GET");
     }
 }

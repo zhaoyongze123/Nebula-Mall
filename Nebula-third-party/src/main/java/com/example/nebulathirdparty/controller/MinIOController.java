@@ -5,12 +5,13 @@ import com.example.nebulathirdparty.service.MinIOService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Map;
 import java.util.UUID;
 
 @RestController
 @RequestMapping("/thirdparty/minio")
-@CrossOrigin
 public class MinIOController {
     
     @Autowired
@@ -26,12 +27,31 @@ public class MinIOController {
             if (fileName == null || fileName.trim().isEmpty()) {
                 fileName = "file-" + System.currentTimeMillis();
             }
-            // 生成唯一的对象名称
-            String objectName = UUID.randomUUID().toString() + "/" + fileName;
+            
+            // 按日期创建目录：yyyy-MM-dd/uuid/filename
+            String date = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
+            String objectName = date + "/" + UUID.randomUUID().toString() + "/" + fileName;
+            
             Map<String, Object> policy = minIOService.getPresignedPostPolicy(objectName);
-            return R.ok(policy);
+            // 标准格式：{ code: 0, msg: "success", data: { ... } }
+            return R.ok().put("data", policy);
         } catch (Exception e) {
             return R.error("获取签名失败: " + e.getMessage());
+        }
+    }
+
+    /**
+     * 获取上传URL（presigned PUT URL）
+     */
+    @GetMapping("/upload/url")
+    public R getUploadUrl(@RequestParam String objectName) {
+        try {
+            String url = minIOService.getPresignedObjectUrl(objectName, "PUT");
+            Map<String, Object> result = new java.util.HashMap<>();
+            result.put("url", url);
+            return R.ok().put("data", result);
+        } catch (Exception e) {
+            return R.error("获取上传URL失败: " + e.getMessage());
         }
     }
     
@@ -41,8 +61,10 @@ public class MinIOController {
     @GetMapping("/download/url")
     public R getDownloadUrl(@RequestParam String objectName) {
         try {
-            String url = minIOService.getPresignedObjectUrl(objectName);
-            return R.ok().put("url", url);
+            String url = minIOService.getPresignedObjectUrl(objectName, "GET");
+            Map<String, Object> result = new java.util.HashMap<>();
+            result.put("url", url);
+            return R.ok().put("data", result);
         } catch (Exception e) {
             return R.error("获取下载地址失败: " + e.getMessage());
         }
