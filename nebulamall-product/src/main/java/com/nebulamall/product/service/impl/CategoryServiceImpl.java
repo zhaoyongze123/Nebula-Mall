@@ -82,4 +82,26 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
 
     }
 
+    @Override
+    public Long[] findCatelogPath(Long catelogId) {
+        // 获取当前分类信息
+        CategoryEntity category = this.getById(catelogId);
+        if (category == null) {
+            return new Long[0];
+        }
+        
+        // 如果是顶级分类（parentCid == 0），直接返回
+        if (category.getParentCid() == 0) {
+            return new Long[]{catelogId};
+        }
+        
+        // 递归查找父分类路径，然后加上当前分类
+        Long[] parentPath = findCatelogPath(category.getParentCid());
+        Long[] currentPath = new Long[parentPath.length + 1];
+        System.arraycopy(parentPath, 0, currentPath, 0, parentPath.length);
+        currentPath[currentPath.length - 1] = catelogId;
+        
+        return currentPath;
+    }
+
 }
