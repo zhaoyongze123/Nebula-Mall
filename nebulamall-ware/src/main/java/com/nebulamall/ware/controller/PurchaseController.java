@@ -2,10 +2,12 @@ package com.nebulamall.ware.controller;
 
 import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 
 
 import com.nebulamall.ware.vo.MergeVo;
+import com.nebulamall.ware.vo.PurchaseDoneVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -29,6 +31,14 @@ public class PurchaseController {
     @Autowired
     private PurchaseService purchaseService;
 
+    ///ware/purchase/done
+    @PostMapping("/done")
+    public R finish(@RequestBody PurchaseDoneVo doneVo){
+
+        purchaseService.done(doneVo);
+
+        return R.ok();
+    }
 
 
     /**
@@ -41,6 +51,18 @@ public class PurchaseController {
         PageUtils page = purchaseService.queryPageUnreceivePurchase(params);
 
         return R.ok().put("page", page);
+    }
+
+    /**
+     * 领取采购单
+     * @return
+     */
+    @PostMapping("/received")
+    public R received(@RequestBody List<Long> ids){
+
+        purchaseService.received(ids);
+
+        return R.ok();
     }
 
     @PostMapping("/merge")
