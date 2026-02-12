@@ -1,15 +1,13 @@
 package com.nebulamall.product.controller;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 
+import com.nebulamall.product.vo.AttrGroupWithAttrsVo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.nebulamall.product.entity.AttrGroupEntity;
 import com.nebulamall.product.service.AttrGroupService;
@@ -161,6 +159,20 @@ public class AttrGroupController {
             );
         }
         return R.ok();
+    }
+
+    /*
+        * 获取属性分组及其关联的属性列表
+     */
+    //Request URL
+    //http://localhost:8888/api/product/attrgroup/225/withattr?t=1770818022301
+    //Request Method
+    //GET
+
+    @GetMapping("/{catelogId}/withattr")
+    public R getAttrGroupWithAttrs(@PathVariable("catelogId") Long catelogId) {
+        List<AttrGroupWithAttrsVo> vos = attrGroupService.getAttrGroupWithAttrsByCatelogId(catelogId);
+        return R.ok().put("data", vos);
     }
 
 }

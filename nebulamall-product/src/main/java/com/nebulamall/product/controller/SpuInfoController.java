@@ -5,6 +5,7 @@ import java.util.Map;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.nebulamall.product.entity.SpuInfoEntity;
 import com.nebulamall.product.service.SpuInfoService;
+import com.nebulamall.product.vo.SpuSaveVo;
 import com.common.utils.PageUtils;
 import com.common.utils.R;
 
@@ -33,11 +35,16 @@ public class SpuInfoController {
 
     /**
      * 列表
+     * Request URL
+     * http://localhost:8888/api/product/spuinfo/list?t=1770901680800&status=0&key=&brandId=9&catelogId=225&page=1&limit=10
+     * Request Method
+     * GET
      */
+
     @RequestMapping("/list")
     //@RequiresPermissions("product:spuinfo:list")
     public R list(@RequestParam Map<String, Object> params){
-        PageUtils page = spuInfoService.queryPage(params);
+        PageUtils page = spuInfoService.queryPageByCondition(params);
 
         return R.ok().put("page", page);
     }
@@ -62,6 +69,16 @@ public class SpuInfoController {
     public R save(@RequestBody SpuInfoEntity spuInfo){
 		spuInfoService.save(spuInfo);
 
+        return R.ok();
+    }
+
+    /**
+     * 保存完整的SPU信息（包含基本信息、描述、图片、属性、SKU等）
+     */
+    @RequestMapping("/savespu")
+    @Transactional
+    public R saveSpu(@RequestBody SpuSaveVo spuSaveVo){
+        spuInfoService.saveSpuInfo(spuSaveVo);
         return R.ok();
     }
 

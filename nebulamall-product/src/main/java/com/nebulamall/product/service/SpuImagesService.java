@@ -5,6 +5,7 @@ import com.common.utils.PageUtils;
 import com.nebulamall.product.entity.SpuImagesEntity;
 
 import java.util.Map;
+import java.util.List;
 
 /**
  * spu图片
@@ -16,5 +17,12 @@ import java.util.Map;
 public interface SpuImagesService extends IService<SpuImagesEntity> {
 
     PageUtils queryPage(Map<String, Object> params);
+
+    /**
+     * 保存SPU图片
+     * @param spuId SPU ID
+     * @param images 图片URL列表
+     */
+    void saveImages(Long spuId, List<String> images);
 }
 

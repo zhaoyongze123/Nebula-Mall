@@ -22,6 +22,7 @@ spring:
     show-sql: false
   jackson:
     default-property-inclusion: non_null
+    date-format: yyyy-MM-dd HH:mm:ss
   sql:
     init:
       mode: never
@@ -31,3 +32,9 @@ mybatis-plus:
   global-config:
     db-config:
       id-type: auto
+
+
+
+logging:
+  level:
+    com.nebulamall: debug

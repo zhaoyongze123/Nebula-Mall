@@ -1,15 +1,13 @@
 package com.nebulamall.ware.controller;
 
 import java.util.Arrays;
+import java.util.Date;
 import java.util.Map;
 
 
+import com.nebulamall.ware.vo.MergeVo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.nebulamall.ware.entity.PurchaseEntity;
 import com.nebulamall.ware.service.PurchaseService;
@@ -30,6 +28,27 @@ import com.common.utils.R;
 public class PurchaseController {
     @Autowired
     private PurchaseService purchaseService;
+
+
+
+    /**
+     * 列表
+     * 查询未领取的采购单
+     */
+    @RequestMapping("/unreceive/list")
+    //@RequiresPermissions("ware:purchase:unreceive:list")
+    public R unreceivelist(@RequestParam Map<String, Object> params){
+        PageUtils page = purchaseService.queryPageUnreceivePurchase(params);
+
+        return R.ok().put("page", page);
+    }
+
+    @PostMapping("/merge")
+    //@RequiresPermissions("ware:purchase:merge")
+    public R merge(@RequestBody MergeVo mergeVo){
+        purchaseService.mergePurchase(mergeVo);
+        return R.ok();
+    }
 
     /**
      * 列表
@@ -60,6 +79,8 @@ public class PurchaseController {
     @RequestMapping("/save")
     //@RequiresPermissions("ware:purchase:save")
     public R save(@RequestBody PurchaseEntity purchase){
+        purchase.setUpdateTime(new Date());
+        purchase.setCreateTime(new Date());
 		purchaseService.save(purchase);
 
         return R.ok();

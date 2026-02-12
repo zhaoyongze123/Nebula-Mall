@@ -1,11 +1,20 @@
 package com.nebulamall.product.service.impl;
 
+import com.common.utils.R;
 import com.nebulamall.product.dao.BrandDao;
 import com.nebulamall.product.dao.CategoryDao;
+import com.nebulamall.product.entity.BrandEntity;
+import com.nebulamall.product.service.BrandService;
+import com.nebulamall.product.service.CategoryService;
 import lombok.val;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Collections;
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
+
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -26,6 +35,12 @@ public class CategoryBrandRelationServiceImpl extends ServiceImpl<CategoryBrandR
 
     @Autowired
     CategoryDao categoryDao;
+
+    @Autowired
+    CategoryBrandRelationDao relationDao;
+
+    @Autowired
+    BrandService brandService;
 
     @Override
     public PageUtils queryPage(Map<String, Object> params) {
@@ -59,6 +74,16 @@ public class CategoryBrandRelationServiceImpl extends ServiceImpl<CategoryBrandR
         this.save(categoryBrandRelation);
 
 
+    }
+
+    @Override
+    public List<BrandEntity> getBrandByCatId(Long catId) {
+        List<BrandEntity> collect = relationDao.selectList(new QueryWrapper<CategoryBrandRelationEntity>().eq("catelog_id", catId))
+                .stream().map(item -> {
+                    Long brandId = item.getBrandId();
+                    return this.brandService.getById(brandId);
+                }).collect(Collectors.toList());
+        return collect;
     }
 
 }

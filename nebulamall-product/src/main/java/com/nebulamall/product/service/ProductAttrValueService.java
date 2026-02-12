@@ -5,6 +5,7 @@ import com.common.utils.PageUtils;
 import com.nebulamall.product.entity.ProductAttrValueEntity;
 
 import java.util.Map;
+import java.util.List;
 
 /**
  * spu属性值
@@ -16,5 +17,11 @@ import java.util.Map;
 public interface ProductAttrValueService extends IService<ProductAttrValueEntity> {
 
     PageUtils queryPage(Map<String, Object> params);
+
+    /**
+     * 保存产品属性值
+     * @param collect 产品属性值集合
+     */
+    void saveProductAttr(List<ProductAttrValueEntity> collect);
 }
 

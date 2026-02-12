@@ -3,9 +3,14 @@ package com.nebulamall.product.controller;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.nebulamall.product.entity.BrandEntity;
+import com.nebulamall.product.vo.BrandVo;
+import lombok.val;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -40,6 +45,21 @@ public class CategoryBrandRelationController {
         );
 
         return R.ok().put("data", data);
+    }
+
+
+    //http://localhost:8888/api/product/categorybrandrelation/brands/list?t=
+    @GetMapping("brands/list")
+    public R relationBrandlist(@RequestParam("catId") Long catId){
+        List<BrandEntity> vos = categoryBrandRelationService.getBrandByCatId(catId);
+        List<BrandVo> collect = vos.stream().map(item -> {
+            BrandVo brandVo = new BrandVo();
+            brandVo.setBrandId(item.getBrandId());
+            brandVo.setBrandName(item.getName());
+            return brandVo;
+        }).collect(Collectors.toList());
+
+        return R.ok().put("data", collect);
     }
 
 
@@ -87,5 +107,6 @@ public class CategoryBrandRelationController {
 
         return R.ok();
     }
+
 
 }

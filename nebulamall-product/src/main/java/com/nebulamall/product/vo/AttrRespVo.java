@@ -13,5 +13,6 @@ public class AttrRespVo extends AttrVo {
 
 
     public void setAttrGroupName(String attrGroupName) {
+
     }
 }
