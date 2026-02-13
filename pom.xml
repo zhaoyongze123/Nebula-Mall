@@ -23,6 +23,7 @@
         <module>nebulamall-product</module>
         <module>nebulamall-ware</module>
         <module>nebulamall-gateway</module>
+        <module>nebulamall-search</module>
         <module>renren-fast</module>
         <module>renren-generator</module>
     </modules>

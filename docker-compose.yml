@@ -36,7 +36,9 @@ services:
 
   # Elasticsearch 搜索引擎
   elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:8.10.2
+    build:
+      context: .
+      dockerfile: Dockerfile.elasticsearch
     container_name: nebulamall-elasticsearch
     environment:
       - discovery.type=single-node

@@ -1,0 +1,55 @@
+2026-02-13 23:36:19 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 2cfc3800-899a-4f0e-b083-065ffbcfa686_config-0
+2026-02-13 23:36:19 [main] INFO  org.reflections.Reflections - Reflections took 58 ms to scan 1 urls, producing 3 keys and 6 values 
+2026-02-13 23:36:19 [main] INFO  org.reflections.Reflections - Reflections took 37 ms to scan 1 urls, producing 4 keys and 9 values 
+2026-02-13 23:36:19 [main] INFO  org.reflections.Reflections - Reflections took 21 ms to scan 1 urls, producing 3 keys and 10 values 
+2026-02-13 23:36:19 [main] INFO  org.reflections.Reflections - Reflections took 148 ms to scan 197 urls, producing 0 keys and 0 values 
+2026-02-13 23:36:19 [main] INFO  org.reflections.Reflections - Reflections took 10 ms to scan 1 urls, producing 1 keys and 5 values 
+2026-02-13 23:36:19 [main] INFO  org.reflections.Reflections - Reflections took 6 ms to scan 1 urls, producing 1 keys and 7 values 
+2026-02-13 23:36:19 [main] INFO  org.reflections.Reflections - Reflections took 16 ms to scan 1 urls, producing 2 keys and 8 values 
+2026-02-13 23:36:19 [main] INFO  org.reflections.Reflections - Reflections took 115 ms to scan 197 urls, producing 0 keys and 0 values 
+2026-02-13 23:36:19 [main] INFO  c.alibaba.nacos.common.remote.client - [2cfc3800-899a-4f0e-b083-065ffbcfa686_config-0] RpcClient init label, labels = {module=config, Vipserver-Tag=null, source=sdk, Amory-Tag=null, Location-Tag=null, taskId=0, AppName=unknown}
+2026-02-13 23:36:19 [main] INFO  c.alibaba.nacos.common.remote.client - [2cfc3800-899a-4f0e-b083-065ffbcfa686_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$642/1728057672
+2026-02-13 23:36:19 [main] INFO  c.alibaba.nacos.common.remote.client - [2cfc3800-899a-4f0e-b083-065ffbcfa686_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$643/10001825
+2026-02-13 23:36:19 [main] INFO  c.alibaba.nacos.common.remote.client - [2cfc3800-899a-4f0e-b083-065ffbcfa686_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2026-02-13 23:36:19 [main] INFO  c.alibaba.nacos.common.remote.client - [2cfc3800-899a-4f0e-b083-065ffbcfa686_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2026-02-13 23:36:19 [main] INFO  c.alibaba.nacos.common.remote.client - [2cfc3800-899a-4f0e-b083-065ffbcfa686_config-0] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+2026-02-13 23:36:21 [main] INFO  c.alibaba.nacos.common.remote.client - [2cfc3800-899a-4f0e-b083-065ffbcfa686_config-0] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1770996980908_192.168.65.1_58800
+2026-02-13 23:36:21 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [2cfc3800-899a-4f0e-b083-065ffbcfa686_config-0] Notify connected event to listeners.
+2026-02-13 23:36:21 [main] INFO  c.alibaba.nacos.common.remote.client - [2cfc3800-899a-4f0e-b083-065ffbcfa686_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2026-02-13 23:36:21 [main] INFO  c.alibaba.nacos.common.remote.client - [2cfc3800-899a-4f0e-b083-065ffbcfa686_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$652/1841099284
+2026-02-13 23:36:21 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[nebulamall-search] & group[DEFAULT_GROUP]
+2026-02-13 23:36:21 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[nebulamall-search.properties] & group[DEFAULT_GROUP]
+2026-02-13 23:36:21 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-nebulamall-search.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-nebulamall-search,DEFAULT_GROUP'}]
+2026-02-13 23:36:21 [main] INFO  c.e.n.search.SearchApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-02-13 23:36:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2026-02-13 23:36:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 226 ms. Found 1 Elasticsearch repository interfaces.
+2026-02-13 23:36:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2026-02-13 23:36:23 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2026-02-13 23:36:23 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=b255476f-1f2b-3f2d-ace3-11b360fd24ad
+2026-02-13 23:36:25 [main] WARN  o.s.d.e.c.m.SimpleElasticsearchPersistentProperty - Unsupported type 'class java.lang.Long' for date property 'createTime'.
+2026-02-13 23:36:25 [main] WARN  o.s.d.e.c.m.SimpleElasticsearchPersistentProperty - Unsupported type 'class java.lang.Long' for date property 'updateTime'.
+2026-02-13 23:36:27 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-02-13 23:36:28 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of f763073a-0084-4508-912a-60043bd170c6
+2026-02-13 23:36:28 [main] INFO  c.alibaba.nacos.common.remote.client - [f763073a-0084-4508-912a-60043bd170c6] RpcClient init label, labels = {module=naming, source=sdk}
+2026-02-13 23:36:28 [main] INFO  c.alibaba.nacos.common.remote.client - [f763073a-0084-4508-912a-60043bd170c6] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2026-02-13 23:36:28 [main] INFO  c.alibaba.nacos.common.remote.client - [f763073a-0084-4508-912a-60043bd170c6] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2026-02-13 23:36:28 [main] INFO  c.alibaba.nacos.common.remote.client - [f763073a-0084-4508-912a-60043bd170c6] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2026-02-13 23:36:28 [main] INFO  c.alibaba.nacos.common.remote.client - [f763073a-0084-4508-912a-60043bd170c6] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+2026-02-13 23:36:28 [main] INFO  c.alibaba.nacos.common.remote.client - [f763073a-0084-4508-912a-60043bd170c6] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1770996988123_192.168.65.1_55246
+2026-02-13 23:36:28 [main] INFO  c.alibaba.nacos.common.remote.client - [f763073a-0084-4508-912a-60043bd170c6] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2026-02-13 23:36:28 [main] INFO  c.alibaba.nacos.common.remote.client - [f763073a-0084-4508-912a-60043bd170c6] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$652/1841099284
+2026-02-13 23:36:28 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [f763073a-0084-4508-912a-60043bd170c6] Notify connected event to listeners.
+2026-02-13 23:36:28 [main] INFO  c.e.n.search.SearchApplicationTests - Started SearchApplicationTests in 11.065 seconds (JVM running for 13.031)
+2026-02-13 23:36:28 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=nebulamall-search.properties, group=DEFAULT_GROUP
+2026-02-13 23:36:28 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=nebulamall-search, group=DEFAULT_GROUP
+2026-02-13 23:36:28 [nacos-grpc-client-executor-6] INFO  c.alibaba.nacos.common.remote.client - [f763073a-0084-4508-912a-60043bd170c6] Receive server push request, request = NotifySubscriberRequest, requestId = 5
+2026-02-13 23:36:28 [nacos-grpc-client-executor-6] INFO  c.alibaba.nacos.common.remote.client - [f763073a-0084-4508-912a-60043bd170c6] Ack server push request, request = NotifySubscriberRequest, requestId = 5
+2026-02-13 23:36:29 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2026-02-13 23:36:29 [Thread-6] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2026-02-13 23:36:29 [Thread-6] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2026-02-13 23:36:29 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2026-02-13 23:36:30 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Shutdown rpc client, set status to shutdown
+2026-02-13 23:36:30 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@65911b3f[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+2026-02-13 23:36:30 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Close current connection 1770996988123_192.168.65.1_55246
+2026-02-13 23:36:30 [nacos-grpc-client-executor-12] INFO  c.a.n.c.r.client.grpc.GrpcClient - [1770996988123_192.168.65.1_55246]Ignore complete event,isRunning:false,isAbandon=false
+2026-02-13 23:36:30 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client.grpc.GrpcClient - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@471e05f[Running, pool size = 13, active threads = 0, queued tasks = 0, completed tasks = 13]

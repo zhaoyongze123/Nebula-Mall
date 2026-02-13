@@ -1,0 +1,633 @@
+2026-02-13 22:54:36 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of ac386bfa-ec19-49e0-b982-913067761d93_config-0
+2026-02-13 22:54:36 [main] INFO  org.reflections.Reflections - Reflections took 41 ms to scan 1 urls, producing 3 keys and 6 values 
+2026-02-13 22:54:36 [main] INFO  org.reflections.Reflections - Reflections took 15 ms to scan 1 urls, producing 4 keys and 9 values 
+2026-02-13 22:54:36 [main] INFO  org.reflections.Reflections - Reflections took 17 ms to scan 1 urls, producing 3 keys and 10 values 
+2026-02-13 22:54:36 [main] INFO  org.reflections.Reflections - Reflections took 150 ms to scan 162 urls, producing 0 keys and 0 values 
+2026-02-13 22:54:36 [main] INFO  org.reflections.Reflections - Reflections took 13 ms to scan 1 urls, producing 1 keys and 5 values 
+2026-02-13 22:54:36 [main] INFO  org.reflections.Reflections - Reflections took 13 ms to scan 1 urls, producing 1 keys and 7 values 
+2026-02-13 22:54:36 [main] INFO  org.reflections.Reflections - Reflections took 19 ms to scan 1 urls, producing 2 keys and 8 values 
+2026-02-13 22:54:36 [main] INFO  org.reflections.Reflections - Reflections took 100 ms to scan 162 urls, producing 0 keys and 0 values 
+2026-02-13 22:54:36 [main] INFO  c.alibaba.nacos.common.remote.client - [ac386bfa-ec19-49e0-b982-913067761d93_config-0] RpcClient init label, labels = {module=config, Vipserver-Tag=null, source=sdk, Amory-Tag=null, Location-Tag=null, taskId=0, AppName=unknown}
+2026-02-13 22:54:36 [main] INFO  c.alibaba.nacos.common.remote.client - [ac386bfa-ec19-49e0-b982-913067761d93_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$329/988904418
+2026-02-13 22:54:36 [main] INFO  c.alibaba.nacos.common.remote.client - [ac386bfa-ec19-49e0-b982-913067761d93_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$330/261650860
+2026-02-13 22:54:36 [main] INFO  c.alibaba.nacos.common.remote.client - [ac386bfa-ec19-49e0-b982-913067761d93_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2026-02-13 22:54:36 [main] INFO  c.alibaba.nacos.common.remote.client - [ac386bfa-ec19-49e0-b982-913067761d93_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2026-02-13 22:54:36 [main] INFO  c.alibaba.nacos.common.remote.client - [ac386bfa-ec19-49e0-b982-913067761d93_config-0] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+2026-02-13 22:54:37 [main] INFO  c.alibaba.nacos.common.remote.client - [ac386bfa-ec19-49e0-b982-913067761d93_config-0] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1770994476999_192.168.65.1_23826
+2026-02-13 22:54:37 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [ac386bfa-ec19-49e0-b982-913067761d93_config-0] Notify connected event to listeners.
+2026-02-13 22:54:37 [main] INFO  c.alibaba.nacos.common.remote.client - [ac386bfa-ec19-49e0-b982-913067761d93_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2026-02-13 22:54:37 [main] INFO  c.alibaba.nacos.common.remote.client - [ac386bfa-ec19-49e0-b982-913067761d93_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$339/518692141
+2026-02-13 22:54:37 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[nebulamall-search] & group[DEFAULT_GROUP]
+2026-02-13 22:54:37 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[nebulamall-search.properties] & group[DEFAULT_GROUP]
+2026-02-13 22:54:37 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-nebulamall-search.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-nebulamall-search,DEFAULT_GROUP'}]
+2026-02-13 22:54:37 [main] INFO  c.e.n.search.NebulaSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-13 22:54:38 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2026-02-13 22:54:38 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 1 Elasticsearch repository interfaces.
+2026-02-13 22:54:38 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2026-02-13 22:54:38 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2026-02-13 22:54:38 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.nebulamall.search]' package. Please check your configuration.
+2026-02-13 22:54:39 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5b3bb1a8-98db-3750-93ab-14024fc19150
+2026-02-13 22:54:39 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10004 (http)
+2026-02-13 22:54:39 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-13 22:54:39 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2026-02-13 22:54:39 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-13 22:54:39 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1654 ms
+2026-02-13 22:54:40 [main] WARN  o.s.d.e.c.m.SimpleElasticsearchPersistentProperty - Unsupported type 'class java.lang.Long' for date property 'createTime'.
+2026-02-13 22:54:40 [main] WARN  o.s.d.e.c.m.SimpleElasticsearchPersistentProperty - Unsupported type 'class java.lang.Long' for date property 'updateTime'.
+2026-02-13 22:54:41 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2026-02-13 22:54:41 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2026-02-13 22:54:41 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-02-13 22:54:41 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2026-02-13 22:54:41 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2026-02-13 22:54:41 [Thread-4] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2026-02-13 22:54:41 [Thread-9] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2026-02-13 22:54:41 [Thread-4] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2026-02-13 22:54:41 [Thread-9] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2026-02-13 23:00:09 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 81e706be-0c8d-4aa0-8e98-57419e01ff19_config-0
+2026-02-13 23:00:10 [main] INFO  org.reflections.Reflections - Reflections took 42 ms to scan 1 urls, producing 3 keys and 6 values 
+2026-02-13 23:00:10 [main] INFO  org.reflections.Reflections - Reflections took 17 ms to scan 1 urls, producing 4 keys and 9 values 
+2026-02-13 23:00:10 [main] INFO  org.reflections.Reflections - Reflections took 11 ms to scan 1 urls, producing 3 keys and 10 values 
+2026-02-13 23:00:10 [main] INFO  org.reflections.Reflections - Reflections took 141 ms to scan 162 urls, producing 0 keys and 0 values 
+2026-02-13 23:00:10 [main] INFO  org.reflections.Reflections - Reflections took 12 ms to scan 1 urls, producing 1 keys and 5 values 
+2026-02-13 23:00:10 [main] INFO  org.reflections.Reflections - Reflections took 13 ms to scan 1 urls, producing 1 keys and 7 values 
+2026-02-13 23:00:10 [main] INFO  org.reflections.Reflections - Reflections took 21 ms to scan 1 urls, producing 2 keys and 8 values 
+2026-02-13 23:00:10 [main] INFO  org.reflections.Reflections - Reflections took 102 ms to scan 162 urls, producing 0 keys and 0 values 
+2026-02-13 23:00:10 [main] INFO  c.alibaba.nacos.common.remote.client - [81e706be-0c8d-4aa0-8e98-57419e01ff19_config-0] RpcClient init label, labels = {module=config, Vipserver-Tag=null, source=sdk, Amory-Tag=null, Location-Tag=null, taskId=0, AppName=unknown}
+2026-02-13 23:00:10 [main] INFO  c.alibaba.nacos.common.remote.client - [81e706be-0c8d-4aa0-8e98-57419e01ff19_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$329/261650860
+2026-02-13 23:00:10 [main] INFO  c.alibaba.nacos.common.remote.client - [81e706be-0c8d-4aa0-8e98-57419e01ff19_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$330/938613108
+2026-02-13 23:00:10 [main] INFO  c.alibaba.nacos.common.remote.client - [81e706be-0c8d-4aa0-8e98-57419e01ff19_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2026-02-13 23:00:10 [main] INFO  c.alibaba.nacos.common.remote.client - [81e706be-0c8d-4aa0-8e98-57419e01ff19_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2026-02-13 23:00:10 [main] INFO  c.alibaba.nacos.common.remote.client - [81e706be-0c8d-4aa0-8e98-57419e01ff19_config-0] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+2026-02-13 23:00:11 [main] INFO  c.alibaba.nacos.common.remote.client - [81e706be-0c8d-4aa0-8e98-57419e01ff19_config-0] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1770994810913_192.168.65.1_58882
+2026-02-13 23:00:11 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [81e706be-0c8d-4aa0-8e98-57419e01ff19_config-0] Notify connected event to listeners.
+2026-02-13 23:00:11 [main] INFO  c.alibaba.nacos.common.remote.client - [81e706be-0c8d-4aa0-8e98-57419e01ff19_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2026-02-13 23:00:11 [main] INFO  c.alibaba.nacos.common.remote.client - [81e706be-0c8d-4aa0-8e98-57419e01ff19_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$339/1620187937
+2026-02-13 23:00:11 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[nebulamall-search] & group[DEFAULT_GROUP]
+2026-02-13 23:00:11 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[nebulamall-search.properties] & group[DEFAULT_GROUP]
+2026-02-13 23:00:11 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-nebulamall-search.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-nebulamall-search,DEFAULT_GROUP'}]
+2026-02-13 23:00:11 [main] INFO  c.e.n.search.NebulaSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-13 23:00:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2026-02-13 23:00:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64 ms. Found 1 Elasticsearch repository interfaces.
+2026-02-13 23:00:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2026-02-13 23:00:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2026-02-13 23:00:12 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.nebulamall.search]' package. Please check your configuration.
+2026-02-13 23:00:12 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5b3bb1a8-98db-3750-93ab-14024fc19150
+2026-02-13 23:00:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10004 (http)
+2026-02-13 23:00:12 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-13 23:00:13 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2026-02-13 23:00:13 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-13 23:00:13 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1804 ms
+2026-02-13 23:00:13 [main] WARN  o.s.d.e.c.m.SimpleElasticsearchPersistentProperty - Unsupported type 'class java.lang.Long' for date property 'createTime'.
+2026-02-13 23:00:13 [main] WARN  o.s.d.e.c.m.SimpleElasticsearchPersistentProperty - Unsupported type 'class java.lang.Long' for date property 'updateTime'.
+2026-02-13 23:00:14 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2026-02-13 23:00:14 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2026-02-13 23:00:14 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-02-13 23:00:14 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2026-02-13 23:00:14 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2026-02-13 23:00:14 [Thread-4] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2026-02-13 23:00:14 [Thread-4] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2026-02-13 23:00:14 [Thread-9] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2026-02-13 23:00:14 [Thread-9] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2026-02-13 23:02:08 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of e26097b2-0224-4628-857c-92c529488974_config-0
+2026-02-13 23:02:08 [main] INFO  org.reflections.Reflections - Reflections took 39 ms to scan 1 urls, producing 3 keys and 6 values 
+2026-02-13 23:02:08 [main] INFO  org.reflections.Reflections - Reflections took 14 ms to scan 1 urls, producing 4 keys and 9 values 
+2026-02-13 23:02:08 [main] INFO  org.reflections.Reflections - Reflections took 12 ms to scan 1 urls, producing 3 keys and 10 values 
+2026-02-13 23:02:08 [main] INFO  org.reflections.Reflections - Reflections took 148 ms to scan 162 urls, producing 0 keys and 0 values 
+2026-02-13 23:02:08 [main] INFO  org.reflections.Reflections - Reflections took 15 ms to scan 1 urls, producing 1 keys and 5 values 
+2026-02-13 23:02:08 [main] INFO  org.reflections.Reflections - Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+2026-02-13 23:02:08 [main] INFO  org.reflections.Reflections - Reflections took 18 ms to scan 1 urls, producing 2 keys and 8 values 
+2026-02-13 23:02:08 [main] INFO  org.reflections.Reflections - Reflections took 90 ms to scan 162 urls, producing 0 keys and 0 values 
+2026-02-13 23:02:08 [main] INFO  c.alibaba.nacos.common.remote.client - [e26097b2-0224-4628-857c-92c529488974_config-0] RpcClient init label, labels = {module=config, Vipserver-Tag=null, source=sdk, Amory-Tag=null, Location-Tag=null, taskId=0, AppName=unknown}
+2026-02-13 23:02:08 [main] INFO  c.alibaba.nacos.common.remote.client - [e26097b2-0224-4628-857c-92c529488974_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$329/1338958728
+2026-02-13 23:02:08 [main] INFO  c.alibaba.nacos.common.remote.client - [e26097b2-0224-4628-857c-92c529488974_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$330/1870723838
+2026-02-13 23:02:08 [main] INFO  c.alibaba.nacos.common.remote.client - [e26097b2-0224-4628-857c-92c529488974_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2026-02-13 23:02:08 [main] INFO  c.alibaba.nacos.common.remote.client - [e26097b2-0224-4628-857c-92c529488974_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2026-02-13 23:02:08 [main] INFO  c.alibaba.nacos.common.remote.client - [e26097b2-0224-4628-857c-92c529488974_config-0] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+2026-02-13 23:02:09 [main] INFO  c.alibaba.nacos.common.remote.client - [e26097b2-0224-4628-857c-92c529488974_config-0] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1770994929318_192.168.65.1_49365
+2026-02-13 23:02:09 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [e26097b2-0224-4628-857c-92c529488974_config-0] Notify connected event to listeners.
+2026-02-13 23:02:09 [main] INFO  c.alibaba.nacos.common.remote.client - [e26097b2-0224-4628-857c-92c529488974_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2026-02-13 23:02:09 [main] INFO  c.alibaba.nacos.common.remote.client - [e26097b2-0224-4628-857c-92c529488974_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$339/1160106451
+2026-02-13 23:02:09 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[nebulamall-search] & group[DEFAULT_GROUP]
+2026-02-13 23:02:09 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[nebulamall-search.properties] & group[DEFAULT_GROUP]
+2026-02-13 23:02:09 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-nebulamall-search.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-nebulamall-search,DEFAULT_GROUP'}]
+2026-02-13 23:02:09 [main] INFO  c.e.n.search.NebulaSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-13 23:02:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2026-02-13 23:02:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 113 ms. Found 1 Elasticsearch repository interfaces.
+2026-02-13 23:02:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2026-02-13 23:02:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2026-02-13 23:02:10 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.nebulamall.search]' package. Please check your configuration.
+2026-02-13 23:02:11 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5b3bb1a8-98db-3750-93ab-14024fc19150
+2026-02-13 23:02:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10004 (http)
+2026-02-13 23:02:11 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-13 23:02:11 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2026-02-13 23:02:11 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-13 23:02:11 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1848 ms
+2026-02-13 23:02:12 [main] WARN  o.s.d.e.c.m.SimpleElasticsearchPersistentProperty - Unsupported type 'class java.lang.Long' for date property 'createTime'.
+2026-02-13 23:02:12 [main] WARN  o.s.d.e.c.m.SimpleElasticsearchPersistentProperty - Unsupported type 'class java.lang.Long' for date property 'updateTime'.
+2026-02-13 23:02:13 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2026-02-13 23:02:13 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2026-02-13 23:02:13 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-02-13 23:02:13 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2026-02-13 23:02:13 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2026-02-13 23:02:13 [Thread-4] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2026-02-13 23:02:13 [Thread-10] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2026-02-13 23:02:13 [Thread-10] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2026-02-13 23:02:13 [Thread-4] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2026-02-13 23:08:57 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 5fba80aa-cd71-4546-b7c1-d40c2b095802_config-0
+2026-02-13 23:08:57 [main] INFO  org.reflections.Reflections - Reflections took 39 ms to scan 1 urls, producing 3 keys and 6 values 
+2026-02-13 23:08:57 [main] INFO  org.reflections.Reflections - Reflections took 14 ms to scan 1 urls, producing 4 keys and 9 values 
+2026-02-13 23:08:57 [main] INFO  org.reflections.Reflections - Reflections took 15 ms to scan 1 urls, producing 3 keys and 10 values 
+2026-02-13 23:08:58 [main] INFO  org.reflections.Reflections - Reflections took 134 ms to scan 162 urls, producing 0 keys and 0 values 
+2026-02-13 23:08:58 [main] INFO  org.reflections.Reflections - Reflections took 11 ms to scan 1 urls, producing 1 keys and 5 values 
+2026-02-13 23:08:58 [main] INFO  org.reflections.Reflections - Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+2026-02-13 23:08:58 [main] INFO  org.reflections.Reflections - Reflections took 17 ms to scan 1 urls, producing 2 keys and 8 values 
+2026-02-13 23:08:58 [main] INFO  org.reflections.Reflections - Reflections took 94 ms to scan 162 urls, producing 0 keys and 0 values 
+2026-02-13 23:08:58 [main] INFO  c.alibaba.nacos.common.remote.client - [5fba80aa-cd71-4546-b7c1-d40c2b095802_config-0] RpcClient init label, labels = {module=config, Vipserver-Tag=null, source=sdk, Amory-Tag=null, Location-Tag=null, taskId=0, AppName=unknown}
+2026-02-13 23:08:58 [main] INFO  c.alibaba.nacos.common.remote.client - [5fba80aa-cd71-4546-b7c1-d40c2b095802_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$329/789982400
+2026-02-13 23:08:58 [main] INFO  c.alibaba.nacos.common.remote.client - [5fba80aa-cd71-4546-b7c1-d40c2b095802_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$330/1576277927
+2026-02-13 23:08:58 [main] INFO  c.alibaba.nacos.common.remote.client - [5fba80aa-cd71-4546-b7c1-d40c2b095802_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2026-02-13 23:08:58 [main] INFO  c.alibaba.nacos.common.remote.client - [5fba80aa-cd71-4546-b7c1-d40c2b095802_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2026-02-13 23:08:58 [main] INFO  c.alibaba.nacos.common.remote.client - [5fba80aa-cd71-4546-b7c1-d40c2b095802_config-0] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+2026-02-13 23:08:58 [main] INFO  c.alibaba.nacos.common.remote.client - [5fba80aa-cd71-4546-b7c1-d40c2b095802_config-0] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1770995338673_192.168.65.1_21733
+2026-02-13 23:08:58 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [5fba80aa-cd71-4546-b7c1-d40c2b095802_config-0] Notify connected event to listeners.
+2026-02-13 23:08:58 [main] INFO  c.alibaba.nacos.common.remote.client - [5fba80aa-cd71-4546-b7c1-d40c2b095802_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2026-02-13 23:08:58 [main] INFO  c.alibaba.nacos.common.remote.client - [5fba80aa-cd71-4546-b7c1-d40c2b095802_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$339/456314134
+2026-02-13 23:08:59 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[nebulamall-search] & group[DEFAULT_GROUP]
+2026-02-13 23:08:59 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[nebulamall-search.properties] & group[DEFAULT_GROUP]
+2026-02-13 23:08:59 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-nebulamall-search.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-nebulamall-search,DEFAULT_GROUP'}]
+2026-02-13 23:08:59 [main] INFO  c.e.n.search.NebulaSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-13 23:08:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2026-02-13 23:08:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 1 Elasticsearch repository interfaces.
+2026-02-13 23:09:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2026-02-13 23:09:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2026-02-13 23:09:00 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.nebulamall.search]' package. Please check your configuration.
+2026-02-13 23:09:00 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5b3bb1a8-98db-3750-93ab-14024fc19150
+2026-02-13 23:09:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10007 (http)
+2026-02-13 23:09:00 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-13 23:09:00 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2026-02-13 23:09:01 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-13 23:09:01 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1963 ms
+2026-02-13 23:09:01 [main] WARN  o.s.d.e.c.m.SimpleElasticsearchPersistentProperty - Unsupported type 'class java.lang.Long' for date property 'createTime'.
+2026-02-13 23:09:01 [main] WARN  o.s.d.e.c.m.SimpleElasticsearchPersistentProperty - Unsupported type 'class java.lang.Long' for date property 'updateTime'.
+2026-02-13 23:09:02 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2026-02-13 23:09:02 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2026-02-13 23:09:02 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-02-13 23:09:02 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2026-02-13 23:09:02 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2026-02-13 23:09:02 [Thread-3] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2026-02-13 23:09:02 [Thread-9] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2026-02-13 23:09:02 [Thread-9] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2026-02-13 23:09:02 [Thread-3] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2026-02-13 23:12:39 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 61adab54-8bc5-43a6-9bda-c1fd2f4da2a5_config-0
+2026-02-13 23:12:39 [main] INFO  org.reflections.Reflections - Reflections took 54 ms to scan 1 urls, producing 3 keys and 6 values 
+2026-02-13 23:12:39 [main] INFO  org.reflections.Reflections - Reflections took 18 ms to scan 1 urls, producing 4 keys and 9 values 
+2026-02-13 23:12:39 [main] INFO  org.reflections.Reflections - Reflections took 12 ms to scan 1 urls, producing 3 keys and 10 values 
+2026-02-13 23:12:39 [main] INFO  org.reflections.Reflections - Reflections took 141 ms to scan 162 urls, producing 0 keys and 0 values 
+2026-02-13 23:12:39 [main] INFO  org.reflections.Reflections - Reflections took 11 ms to scan 1 urls, producing 1 keys and 5 values 
+2026-02-13 23:12:39 [main] INFO  org.reflections.Reflections - Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+2026-02-13 23:12:39 [main] INFO  org.reflections.Reflections - Reflections took 17 ms to scan 1 urls, producing 2 keys and 8 values 
+2026-02-13 23:12:39 [main] INFO  org.reflections.Reflections - Reflections took 91 ms to scan 162 urls, producing 0 keys and 0 values 
+2026-02-13 23:12:39 [main] INFO  c.alibaba.nacos.common.remote.client - [61adab54-8bc5-43a6-9bda-c1fd2f4da2a5_config-0] RpcClient init label, labels = {module=config, Vipserver-Tag=null, source=sdk, Amory-Tag=null, Location-Tag=null, taskId=0, AppName=unknown}
+2026-02-13 23:12:39 [main] INFO  c.alibaba.nacos.common.remote.client - [61adab54-8bc5-43a6-9bda-c1fd2f4da2a5_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$329/789982400
+2026-02-13 23:12:39 [main] INFO  c.alibaba.nacos.common.remote.client - [61adab54-8bc5-43a6-9bda-c1fd2f4da2a5_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$330/1576277927
+2026-02-13 23:12:39 [main] INFO  c.alibaba.nacos.common.remote.client - [61adab54-8bc5-43a6-9bda-c1fd2f4da2a5_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2026-02-13 23:12:39 [main] INFO  c.alibaba.nacos.common.remote.client - [61adab54-8bc5-43a6-9bda-c1fd2f4da2a5_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2026-02-13 23:12:39 [main] INFO  c.alibaba.nacos.common.remote.client - [61adab54-8bc5-43a6-9bda-c1fd2f4da2a5_config-0] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+2026-02-13 23:12:40 [main] INFO  c.alibaba.nacos.common.remote.client - [61adab54-8bc5-43a6-9bda-c1fd2f4da2a5_config-0] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1770995560237_192.168.65.1_52321
+2026-02-13 23:12:40 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [61adab54-8bc5-43a6-9bda-c1fd2f4da2a5_config-0] Notify connected event to listeners.
+2026-02-13 23:12:40 [main] INFO  c.alibaba.nacos.common.remote.client - [61adab54-8bc5-43a6-9bda-c1fd2f4da2a5_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2026-02-13 23:12:40 [main] INFO  c.alibaba.nacos.common.remote.client - [61adab54-8bc5-43a6-9bda-c1fd2f4da2a5_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$339/456314134
+2026-02-13 23:12:40 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[nebulamall-search] & group[DEFAULT_GROUP]
+2026-02-13 23:12:40 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[nebulamall-search.properties] & group[DEFAULT_GROUP]
+2026-02-13 23:12:40 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-nebulamall-search.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-nebulamall-search,DEFAULT_GROUP'}]
+2026-02-13 23:12:40 [main] INFO  c.e.n.search.NebulaSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-13 23:12:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2026-02-13 23:12:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73 ms. Found 1 Elasticsearch repository interfaces.
+2026-02-13 23:12:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2026-02-13 23:12:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2026-02-13 23:12:41 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.nebulamall.search]' package. Please check your configuration.
+2026-02-13 23:12:41 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3d6aac99-989c-33c7-8153-bcfe459ada87
+2026-02-13 23:12:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10007 (http)
+2026-02-13 23:12:42 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-13 23:12:42 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2026-02-13 23:12:42 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-13 23:12:42 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1657 ms
+2026-02-13 23:12:43 [main] WARN  o.s.d.e.c.m.SimpleElasticsearchPersistentProperty - Unsupported type 'class java.lang.Long' for date property 'createTime'.
+2026-02-13 23:12:43 [main] WARN  o.s.d.e.c.m.SimpleElasticsearchPersistentProperty - Unsupported type 'class java.lang.Long' for date property 'updateTime'.
+2026-02-13 23:12:43 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2026-02-13 23:12:44 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2026-02-13 23:12:44 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-02-13 23:12:44 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2026-02-13 23:12:44 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2026-02-13 23:12:44 [Thread-4] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2026-02-13 23:12:44 [Thread-9] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2026-02-13 23:12:44 [Thread-4] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2026-02-13 23:12:44 [Thread-9] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2026-02-13 23:13:51 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of aa6c39bd-544b-49ff-8772-12a794cce513_config-0
+2026-02-13 23:13:51 [main] INFO  org.reflections.Reflections - Reflections took 52 ms to scan 1 urls, producing 3 keys and 6 values 
+2026-02-13 23:13:51 [main] INFO  org.reflections.Reflections - Reflections took 14 ms to scan 1 urls, producing 4 keys and 9 values 
+2026-02-13 23:13:51 [main] INFO  org.reflections.Reflections - Reflections took 16 ms to scan 1 urls, producing 3 keys and 10 values 
+2026-02-13 23:13:51 [main] INFO  org.reflections.Reflections - Reflections took 144 ms to scan 162 urls, producing 0 keys and 0 values 
+2026-02-13 23:13:52 [main] INFO  org.reflections.Reflections - Reflections took 13 ms to scan 1 urls, producing 1 keys and 5 values 
+2026-02-13 23:13:52 [main] INFO  org.reflections.Reflections - Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+2026-02-13 23:13:52 [main] INFO  org.reflections.Reflections - Reflections took 19 ms to scan 1 urls, producing 2 keys and 8 values 
+2026-02-13 23:13:52 [main] INFO  org.reflections.Reflections - Reflections took 88 ms to scan 162 urls, producing 0 keys and 0 values 
+2026-02-13 23:13:52 [main] INFO  c.alibaba.nacos.common.remote.client - [aa6c39bd-544b-49ff-8772-12a794cce513_config-0] RpcClient init label, labels = {module=config, Vipserver-Tag=null, source=sdk, Amory-Tag=null, Location-Tag=null, taskId=0, AppName=unknown}
+2026-02-13 23:13:52 [main] INFO  c.alibaba.nacos.common.remote.client - [aa6c39bd-544b-49ff-8772-12a794cce513_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$329/1228798862
+2026-02-13 23:13:52 [main] INFO  c.alibaba.nacos.common.remote.client - [aa6c39bd-544b-49ff-8772-12a794cce513_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$330/1562764987
+2026-02-13 23:13:52 [main] INFO  c.alibaba.nacos.common.remote.client - [aa6c39bd-544b-49ff-8772-12a794cce513_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2026-02-13 23:13:52 [main] INFO  c.alibaba.nacos.common.remote.client - [aa6c39bd-544b-49ff-8772-12a794cce513_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2026-02-13 23:13:52 [main] INFO  c.alibaba.nacos.common.remote.client - [aa6c39bd-544b-49ff-8772-12a794cce513_config-0] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+2026-02-13 23:13:52 [main] INFO  c.alibaba.nacos.common.remote.client - [aa6c39bd-544b-49ff-8772-12a794cce513_config-0] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1770995632591_192.168.65.1_35042
+2026-02-13 23:13:52 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [aa6c39bd-544b-49ff-8772-12a794cce513_config-0] Notify connected event to listeners.
+2026-02-13 23:13:52 [main] INFO  c.alibaba.nacos.common.remote.client - [aa6c39bd-544b-49ff-8772-12a794cce513_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2026-02-13 23:13:52 [main] INFO  c.alibaba.nacos.common.remote.client - [aa6c39bd-544b-49ff-8772-12a794cce513_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$339/1592712032
+2026-02-13 23:13:52 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[nebulamall-search] & group[DEFAULT_GROUP]
+2026-02-13 23:13:52 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[nebulamall-search.properties] & group[DEFAULT_GROUP]
+2026-02-13 23:13:52 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-nebulamall-search.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-nebulamall-search,DEFAULT_GROUP'}]
+2026-02-13 23:13:52 [main] INFO  c.e.n.search.NebulaSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-13 23:13:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2026-02-13 23:13:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 1 Elasticsearch repository interfaces.
+2026-02-13 23:13:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2026-02-13 23:13:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2026-02-13 23:13:53 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.nebulamall.search]' package. Please check your configuration.
+2026-02-13 23:13:54 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3d6aac99-989c-33c7-8153-bcfe459ada87
+2026-02-13 23:13:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10007 (http)
+2026-02-13 23:13:54 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-13 23:13:54 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2026-02-13 23:13:54 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-13 23:13:54 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1533 ms
+2026-02-13 23:13:55 [main] WARN  o.s.d.e.c.m.SimpleElasticsearchPersistentProperty - Unsupported type 'class java.lang.Long' for date property 'createTime'.
+2026-02-13 23:13:55 [main] WARN  o.s.d.e.c.m.SimpleElasticsearchPersistentProperty - Unsupported type 'class java.lang.Long' for date property 'updateTime'.
+2026-02-13 23:13:55 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2026-02-13 23:13:56 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2026-02-13 23:13:56 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-02-13 23:13:56 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2026-02-13 23:13:56 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2026-02-13 23:13:56 [Thread-4] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2026-02-13 23:13:56 [Thread-10] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2026-02-13 23:13:56 [Thread-10] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2026-02-13 23:15:19 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of f8fc76f9-3fb3-428b-9791-569c27e7d713_config-0
+2026-02-13 23:15:19 [main] INFO  org.reflections.Reflections - Reflections took 38 ms to scan 1 urls, producing 3 keys and 6 values 
+2026-02-13 23:15:19 [main] INFO  org.reflections.Reflections - Reflections took 14 ms to scan 1 urls, producing 4 keys and 9 values 
+2026-02-13 23:15:19 [main] INFO  org.reflections.Reflections - Reflections took 14 ms to scan 1 urls, producing 3 keys and 10 values 
+2026-02-13 23:15:20 [main] INFO  org.reflections.Reflections - Reflections took 137 ms to scan 162 urls, producing 0 keys and 0 values 
+2026-02-13 23:15:20 [main] INFO  org.reflections.Reflections - Reflections took 11 ms to scan 1 urls, producing 1 keys and 5 values 
+2026-02-13 23:15:20 [main] INFO  org.reflections.Reflections - Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+2026-02-13 23:15:20 [main] INFO  org.reflections.Reflections - Reflections took 21 ms to scan 1 urls, producing 2 keys and 8 values 
+2026-02-13 23:15:20 [main] INFO  org.reflections.Reflections - Reflections took 90 ms to scan 162 urls, producing 0 keys and 0 values 
+2026-02-13 23:15:20 [main] INFO  c.alibaba.nacos.common.remote.client - [f8fc76f9-3fb3-428b-9791-569c27e7d713_config-0] RpcClient init label, labels = {module=config, Vipserver-Tag=null, source=sdk, Amory-Tag=null, Location-Tag=null, taskId=0, AppName=unknown}
+2026-02-13 23:15:20 [main] INFO  c.alibaba.nacos.common.remote.client - [f8fc76f9-3fb3-428b-9791-569c27e7d713_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$329/789982400
+2026-02-13 23:15:20 [main] INFO  c.alibaba.nacos.common.remote.client - [f8fc76f9-3fb3-428b-9791-569c27e7d713_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$330/1576277927
+2026-02-13 23:15:20 [main] INFO  c.alibaba.nacos.common.remote.client - [f8fc76f9-3fb3-428b-9791-569c27e7d713_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2026-02-13 23:15:20 [main] INFO  c.alibaba.nacos.common.remote.client - [f8fc76f9-3fb3-428b-9791-569c27e7d713_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2026-02-13 23:15:20 [main] INFO  c.alibaba.nacos.common.remote.client - [f8fc76f9-3fb3-428b-9791-569c27e7d713_config-0] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+2026-02-13 23:15:20 [main] INFO  c.alibaba.nacos.common.remote.client - [f8fc76f9-3fb3-428b-9791-569c27e7d713_config-0] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1770995720713_192.168.65.1_50279
+2026-02-13 23:15:20 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [f8fc76f9-3fb3-428b-9791-569c27e7d713_config-0] Notify connected event to listeners.
+2026-02-13 23:15:20 [main] INFO  c.alibaba.nacos.common.remote.client - [f8fc76f9-3fb3-428b-9791-569c27e7d713_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2026-02-13 23:15:20 [main] INFO  c.alibaba.nacos.common.remote.client - [f8fc76f9-3fb3-428b-9791-569c27e7d713_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$339/456314134
+2026-02-13 23:15:21 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[nebulamall-search] & group[DEFAULT_GROUP]
+2026-02-13 23:15:21 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[nebulamall-search.properties] & group[DEFAULT_GROUP]
+2026-02-13 23:15:21 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-nebulamall-search.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-nebulamall-search,DEFAULT_GROUP'}]
+2026-02-13 23:15:21 [main] INFO  c.e.n.search.NebulaSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-13 23:15:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2026-02-13 23:15:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 1 Elasticsearch repository interfaces.
+2026-02-13 23:15:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2026-02-13 23:15:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2026-02-13 23:15:22 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=279df63b-9b49-324c-869a-82e787189a48
+2026-02-13 23:15:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10007 (http)
+2026-02-13 23:15:22 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-13 23:15:22 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2026-02-13 23:15:22 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-13 23:15:22 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1496 ms
+2026-02-13 23:15:23 [main] WARN  o.s.d.e.c.m.SimpleElasticsearchPersistentProperty - Unsupported type 'class java.lang.Long' for date property 'createTime'.
+2026-02-13 23:15:23 [main] WARN  o.s.d.e.c.m.SimpleElasticsearchPersistentProperty - Unsupported type 'class java.lang.Long' for date property 'updateTime'.
+2026-02-13 23:15:24 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-02-13 23:15:24 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 3924035e-e30a-4781-adf9-cf67ee880ecc
+2026-02-13 23:15:24 [main] INFO  c.alibaba.nacos.common.remote.client - [3924035e-e30a-4781-adf9-cf67ee880ecc] RpcClient init label, labels = {module=naming, source=sdk}
+2026-02-13 23:15:24 [main] INFO  c.alibaba.nacos.common.remote.client - [3924035e-e30a-4781-adf9-cf67ee880ecc] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2026-02-13 23:15:24 [main] INFO  c.alibaba.nacos.common.remote.client - [3924035e-e30a-4781-adf9-cf67ee880ecc] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2026-02-13 23:15:24 [main] INFO  c.alibaba.nacos.common.remote.client - [3924035e-e30a-4781-adf9-cf67ee880ecc] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2026-02-13 23:15:24 [main] INFO  c.alibaba.nacos.common.remote.client - [3924035e-e30a-4781-adf9-cf67ee880ecc] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+2026-02-13 23:15:24 [main] INFO  c.alibaba.nacos.common.remote.client - [3924035e-e30a-4781-adf9-cf67ee880ecc] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1770995724250_192.168.65.1_19382
+2026-02-13 23:15:24 [main] INFO  c.alibaba.nacos.common.remote.client - [3924035e-e30a-4781-adf9-cf67ee880ecc] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2026-02-13 23:15:24 [main] INFO  c.alibaba.nacos.common.remote.client - [3924035e-e30a-4781-adf9-cf67ee880ecc] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$339/456314134
+2026-02-13 23:15:24 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [3924035e-e30a-4781-adf9-cf67ee880ecc] Notify connected event to listeners.
+2026-02-13 23:15:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10007 (http) with context path ''
+2026-02-13 23:15:24 [main] INFO  c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP nebulamall-search 127.0.0.1:10007 register finished
+2026-02-13 23:15:24 [main] INFO  c.e.n.search.NebulaSearchApplication - Started NebulaSearchApplication in 6.301 seconds (JVM running for 7.008)
+2026-02-13 23:15:24 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=nebulamall-search.properties, group=DEFAULT_GROUP
+2026-02-13 23:15:24 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=nebulamall-search, group=DEFAULT_GROUP
+2026-02-13 23:15:25 [nacos-grpc-client-executor-9] INFO  c.alibaba.nacos.common.remote.client - [3924035e-e30a-4781-adf9-cf67ee880ecc] Receive server push request, request = NotifySubscriberRequest, requestId = 1
+2026-02-13 23:15:25 [nacos-grpc-client-executor-9] INFO  c.alibaba.nacos.common.remote.client - [3924035e-e30a-4781-adf9-cf67ee880ecc] Ack server push request, request = NotifySubscriberRequest, requestId = 1
+2026-02-13 23:21:40 [Thread-9] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2026-02-13 23:21:40 [Thread-4] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2026-02-13 23:21:40 [Thread-9] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2026-02-13 23:21:40 [Thread-4] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2026-02-13 23:21:40 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+2026-02-13 23:21:41 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+2026-02-13 23:21:41 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Shutdown rpc client, set status to shutdown
+2026-02-13 23:21:41 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@319c3f52[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+2026-02-13 23:21:41 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Close current connection 1770995724250_192.168.65.1_19382
+2026-02-13 23:21:41 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client.grpc.GrpcClient - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@1011c485[Running, pool size = 6, active threads = 0, queued tasks = 0, completed tasks = 153]
+2026-02-13 23:26:37 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 28a9d181-b9c3-4e21-bb47-003ebfa95c7f_config-0
+2026-02-13 23:26:37 [main] INFO  org.reflections.Reflections - Reflections took 60 ms to scan 1 urls, producing 3 keys and 6 values 
+2026-02-13 23:26:37 [main] INFO  org.reflections.Reflections - Reflections took 14 ms to scan 1 urls, producing 4 keys and 9 values 
+2026-02-13 23:26:37 [main] INFO  org.reflections.Reflections - Reflections took 13 ms to scan 1 urls, producing 3 keys and 10 values 
+2026-02-13 23:26:37 [main] INFO  org.reflections.Reflections - Reflections took 134 ms to scan 162 urls, producing 0 keys and 0 values 
+2026-02-13 23:26:37 [main] INFO  org.reflections.Reflections - Reflections took 15 ms to scan 1 urls, producing 1 keys and 5 values 
+2026-02-13 23:26:37 [main] INFO  org.reflections.Reflections - Reflections took 13 ms to scan 1 urls, producing 1 keys and 7 values 
+2026-02-13 23:26:37 [main] INFO  org.reflections.Reflections - Reflections took 24 ms to scan 1 urls, producing 2 keys and 8 values 
+2026-02-13 23:26:37 [main] INFO  org.reflections.Reflections - Reflections took 107 ms to scan 162 urls, producing 0 keys and 0 values 
+2026-02-13 23:26:37 [main] INFO  c.alibaba.nacos.common.remote.client - [28a9d181-b9c3-4e21-bb47-003ebfa95c7f_config-0] RpcClient init label, labels = {module=config, Vipserver-Tag=null, source=sdk, Amory-Tag=null, Location-Tag=null, taskId=0, AppName=unknown}
+2026-02-13 23:26:37 [main] INFO  c.alibaba.nacos.common.remote.client - [28a9d181-b9c3-4e21-bb47-003ebfa95c7f_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$329/789982400
+2026-02-13 23:26:37 [main] INFO  c.alibaba.nacos.common.remote.client - [28a9d181-b9c3-4e21-bb47-003ebfa95c7f_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$330/1576277927
+2026-02-13 23:26:37 [main] INFO  c.alibaba.nacos.common.remote.client - [28a9d181-b9c3-4e21-bb47-003ebfa95c7f_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2026-02-13 23:26:37 [main] INFO  c.alibaba.nacos.common.remote.client - [28a9d181-b9c3-4e21-bb47-003ebfa95c7f_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2026-02-13 23:26:37 [main] INFO  c.alibaba.nacos.common.remote.client - [28a9d181-b9c3-4e21-bb47-003ebfa95c7f_config-0] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+2026-02-13 23:26:38 [main] INFO  c.alibaba.nacos.common.remote.client - [28a9d181-b9c3-4e21-bb47-003ebfa95c7f_config-0] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1770996398085_192.168.65.1_43902
+2026-02-13 23:26:38 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [28a9d181-b9c3-4e21-bb47-003ebfa95c7f_config-0] Notify connected event to listeners.
+2026-02-13 23:26:38 [main] INFO  c.alibaba.nacos.common.remote.client - [28a9d181-b9c3-4e21-bb47-003ebfa95c7f_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2026-02-13 23:26:38 [main] INFO  c.alibaba.nacos.common.remote.client - [28a9d181-b9c3-4e21-bb47-003ebfa95c7f_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$339/456314134
+2026-02-13 23:26:38 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[nebulamall-search] & group[DEFAULT_GROUP]
+2026-02-13 23:26:38 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[nebulamall-search.properties] & group[DEFAULT_GROUP]
+2026-02-13 23:26:38 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-nebulamall-search.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-nebulamall-search,DEFAULT_GROUP'}]
+2026-02-13 23:26:38 [main] INFO  c.e.n.search.NebulaSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-13 23:26:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2026-02-13 23:26:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73 ms. Found 1 Elasticsearch repository interfaces.
+2026-02-13 23:26:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2026-02-13 23:26:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2026-02-13 23:26:39 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=279df63b-9b49-324c-869a-82e787189a48
+2026-02-13 23:26:39 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10007 (http)
+2026-02-13 23:26:39 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-13 23:26:39 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2026-02-13 23:26:39 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-13 23:26:39 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1403 ms
+2026-02-13 23:26:40 [main] WARN  o.s.d.e.c.m.SimpleElasticsearchPersistentProperty - Unsupported type 'class java.lang.Long' for date property 'createTime'.
+2026-02-13 23:26:40 [main] WARN  o.s.d.e.c.m.SimpleElasticsearchPersistentProperty - Unsupported type 'class java.lang.Long' for date property 'updateTime'.
+2026-02-13 23:26:41 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-02-13 23:26:41 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 53f64128-48c0-4630-a56a-6817ef7d7a1b
+2026-02-13 23:26:41 [main] INFO  c.alibaba.nacos.common.remote.client - [53f64128-48c0-4630-a56a-6817ef7d7a1b] RpcClient init label, labels = {module=naming, source=sdk}
+2026-02-13 23:26:41 [main] INFO  c.alibaba.nacos.common.remote.client - [53f64128-48c0-4630-a56a-6817ef7d7a1b] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2026-02-13 23:26:41 [main] INFO  c.alibaba.nacos.common.remote.client - [53f64128-48c0-4630-a56a-6817ef7d7a1b] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2026-02-13 23:26:41 [main] INFO  c.alibaba.nacos.common.remote.client - [53f64128-48c0-4630-a56a-6817ef7d7a1b] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2026-02-13 23:26:41 [main] INFO  c.alibaba.nacos.common.remote.client - [53f64128-48c0-4630-a56a-6817ef7d7a1b] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+2026-02-13 23:26:41 [main] INFO  c.alibaba.nacos.common.remote.client - [53f64128-48c0-4630-a56a-6817ef7d7a1b] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1770996401706_192.168.65.1_43961
+2026-02-13 23:26:41 [main] INFO  c.alibaba.nacos.common.remote.client - [53f64128-48c0-4630-a56a-6817ef7d7a1b] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2026-02-13 23:26:41 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [53f64128-48c0-4630-a56a-6817ef7d7a1b] Notify connected event to listeners.
+2026-02-13 23:26:41 [main] INFO  c.alibaba.nacos.common.remote.client - [53f64128-48c0-4630-a56a-6817ef7d7a1b] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$339/456314134
+2026-02-13 23:26:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10007 (http) with context path ''
+2026-02-13 23:26:42 [main] INFO  c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP nebulamall-search 127.0.0.1:10007 register finished
+2026-02-13 23:26:42 [main] INFO  c.e.n.search.NebulaSearchApplication - Started NebulaSearchApplication in 6.418 seconds (JVM running for 7.144)
+2026-02-13 23:26:42 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=nebulamall-search.properties, group=DEFAULT_GROUP
+2026-02-13 23:26:42 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=nebulamall-search, group=DEFAULT_GROUP
+2026-02-13 23:26:42 [nacos-grpc-client-executor-10] INFO  c.alibaba.nacos.common.remote.client - [53f64128-48c0-4630-a56a-6817ef7d7a1b] Receive server push request, request = NotifySubscriberRequest, requestId = 2
+2026-02-13 23:26:42 [nacos-grpc-client-executor-10] INFO  c.alibaba.nacos.common.remote.client - [53f64128-48c0-4630-a56a-6817ef7d7a1b] Ack server push request, request = NotifySubscriberRequest, requestId = 2
+2026-02-13 23:29:11 [Thread-9] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2026-02-13 23:29:11 [Thread-4] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2026-02-13 23:29:11 [Thread-9] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2026-02-13 23:29:11 [Thread-4] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2026-02-13 23:29:11 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+2026-02-13 23:29:11 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+2026-02-13 23:29:12 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Shutdown rpc client, set status to shutdown
+2026-02-13 23:29:12 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@40704a69[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+2026-02-13 23:29:12 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Close current connection 1770996401706_192.168.65.1_43961
+2026-02-13 23:29:12 [nacos-grpc-client-executor-73] INFO  c.a.n.c.r.client.grpc.GrpcClient - [1770996401706_192.168.65.1_43961]Ignore complete event,isRunning:false,isAbandon=false
+2026-02-13 23:29:12 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client.grpc.GrpcClient - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@294b880f[Running, pool size = 9, active threads = 0, queued tasks = 0, completed tasks = 74]
+2026-02-13 23:29:16 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 3c5594b2-3216-47d9-a5b4-a3328a78c0d3_config-0
+2026-02-13 23:29:16 [main] INFO  org.reflections.Reflections - Reflections took 48 ms to scan 1 urls, producing 3 keys and 6 values 
+2026-02-13 23:29:16 [main] INFO  org.reflections.Reflections - Reflections took 21 ms to scan 1 urls, producing 4 keys and 9 values 
+2026-02-13 23:29:16 [main] INFO  org.reflections.Reflections - Reflections took 11 ms to scan 1 urls, producing 3 keys and 10 values 
+2026-02-13 23:29:16 [main] INFO  org.reflections.Reflections - Reflections took 189 ms to scan 162 urls, producing 0 keys and 0 values 
+2026-02-13 23:29:16 [main] INFO  org.reflections.Reflections - Reflections took 19 ms to scan 1 urls, producing 1 keys and 5 values 
+2026-02-13 23:29:17 [main] INFO  org.reflections.Reflections - Reflections took 38 ms to scan 1 urls, producing 1 keys and 7 values 
+2026-02-13 23:29:17 [main] INFO  org.reflections.Reflections - Reflections took 9 ms to scan 1 urls, producing 2 keys and 8 values 
+2026-02-13 23:29:17 [main] INFO  org.reflections.Reflections - Reflections took 104 ms to scan 162 urls, producing 0 keys and 0 values 
+2026-02-13 23:29:17 [main] INFO  c.alibaba.nacos.common.remote.client - [3c5594b2-3216-47d9-a5b4-a3328a78c0d3_config-0] RpcClient init label, labels = {module=config, Vipserver-Tag=null, source=sdk, Amory-Tag=null, Location-Tag=null, taskId=0, AppName=unknown}
+2026-02-13 23:29:17 [main] INFO  c.alibaba.nacos.common.remote.client - [3c5594b2-3216-47d9-a5b4-a3328a78c0d3_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$329/164714495
+2026-02-13 23:29:17 [main] INFO  c.alibaba.nacos.common.remote.client - [3c5594b2-3216-47d9-a5b4-a3328a78c0d3_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$330/789982400
+2026-02-13 23:29:17 [main] INFO  c.alibaba.nacos.common.remote.client - [3c5594b2-3216-47d9-a5b4-a3328a78c0d3_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2026-02-13 23:29:17 [main] INFO  c.alibaba.nacos.common.remote.client - [3c5594b2-3216-47d9-a5b4-a3328a78c0d3_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2026-02-13 23:29:17 [main] INFO  c.alibaba.nacos.common.remote.client - [3c5594b2-3216-47d9-a5b4-a3328a78c0d3_config-0] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+2026-02-13 23:29:17 [main] INFO  c.alibaba.nacos.common.remote.client - [3c5594b2-3216-47d9-a5b4-a3328a78c0d3_config-0] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1770996557663_192.168.65.1_59723
+2026-02-13 23:29:17 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [3c5594b2-3216-47d9-a5b4-a3328a78c0d3_config-0] Notify connected event to listeners.
+2026-02-13 23:29:17 [main] INFO  c.alibaba.nacos.common.remote.client - [3c5594b2-3216-47d9-a5b4-a3328a78c0d3_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2026-02-13 23:29:17 [main] INFO  c.alibaba.nacos.common.remote.client - [3c5594b2-3216-47d9-a5b4-a3328a78c0d3_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$339/858727880
+2026-02-13 23:29:17 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[nebulamall-search] & group[DEFAULT_GROUP]
+2026-02-13 23:29:18 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[nebulamall-search.properties] & group[DEFAULT_GROUP]
+2026-02-13 23:29:18 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-nebulamall-search.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-nebulamall-search,DEFAULT_GROUP'}]
+2026-02-13 23:29:18 [main] INFO  c.e.n.search.NebulaSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-13 23:29:19 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2026-02-13 23:29:19 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 125 ms. Found 1 Elasticsearch repository interfaces.
+2026-02-13 23:29:19 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2026-02-13 23:29:19 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2026-02-13 23:29:20 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=279df63b-9b49-324c-869a-82e787189a48
+2026-02-13 23:29:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10007 (http)
+2026-02-13 23:29:20 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-13 23:29:20 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2026-02-13 23:29:20 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-13 23:29:20 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2545 ms
+2026-02-13 23:29:21 [main] WARN  o.s.d.e.c.m.SimpleElasticsearchPersistentProperty - Unsupported type 'class java.lang.Long' for date property 'createTime'.
+2026-02-13 23:29:21 [main] WARN  o.s.d.e.c.m.SimpleElasticsearchPersistentProperty - Unsupported type 'class java.lang.Long' for date property 'updateTime'.
+2026-02-13 23:29:22 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-02-13 23:29:22 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 2ff2c98c-7ba9-4c79-8b79-1734164d3e2c
+2026-02-13 23:29:22 [main] INFO  c.alibaba.nacos.common.remote.client - [2ff2c98c-7ba9-4c79-8b79-1734164d3e2c] RpcClient init label, labels = {module=naming, source=sdk}
+2026-02-13 23:29:22 [main] INFO  c.alibaba.nacos.common.remote.client - [2ff2c98c-7ba9-4c79-8b79-1734164d3e2c] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2026-02-13 23:29:22 [main] INFO  c.alibaba.nacos.common.remote.client - [2ff2c98c-7ba9-4c79-8b79-1734164d3e2c] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2026-02-13 23:29:22 [main] INFO  c.alibaba.nacos.common.remote.client - [2ff2c98c-7ba9-4c79-8b79-1734164d3e2c] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2026-02-13 23:29:22 [main] INFO  c.alibaba.nacos.common.remote.client - [2ff2c98c-7ba9-4c79-8b79-1734164d3e2c] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+2026-02-13 23:29:22 [main] INFO  c.alibaba.nacos.common.remote.client - [2ff2c98c-7ba9-4c79-8b79-1734164d3e2c] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1770996562496_192.168.65.1_39236
+2026-02-13 23:29:22 [main] INFO  c.alibaba.nacos.common.remote.client - [2ff2c98c-7ba9-4c79-8b79-1734164d3e2c] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2026-02-13 23:29:22 [main] INFO  c.alibaba.nacos.common.remote.client - [2ff2c98c-7ba9-4c79-8b79-1734164d3e2c] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$339/858727880
+2026-02-13 23:29:22 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [2ff2c98c-7ba9-4c79-8b79-1734164d3e2c] Notify connected event to listeners.
+2026-02-13 23:29:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10007 (http) with context path ''
+2026-02-13 23:29:22 [main] INFO  c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP nebulamall-search 127.0.0.1:10007 register finished
+2026-02-13 23:29:22 [main] INFO  c.e.n.search.NebulaSearchApplication - Started NebulaSearchApplication in 7.864 seconds (JVM running for 8.758)
+2026-02-13 23:29:22 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=nebulamall-search.properties, group=DEFAULT_GROUP
+2026-02-13 23:29:22 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=nebulamall-search, group=DEFAULT_GROUP
+2026-02-13 23:29:23 [nacos-grpc-client-executor-8] INFO  c.alibaba.nacos.common.remote.client - [2ff2c98c-7ba9-4c79-8b79-1734164d3e2c] Receive server push request, request = NotifySubscriberRequest, requestId = 3
+2026-02-13 23:29:23 [nacos-grpc-client-executor-8] INFO  c.alibaba.nacos.common.remote.client - [2ff2c98c-7ba9-4c79-8b79-1734164d3e2c] Ack server push request, request = NotifySubscriberRequest, requestId = 3
+2026-02-13 23:35:38 [Thread-10] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2026-02-13 23:35:38 [Thread-4] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2026-02-13 23:35:38 [Thread-10] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2026-02-13 23:35:38 [Thread-4] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2026-02-13 23:35:38 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+2026-02-13 23:35:38 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+2026-02-13 23:35:39 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Shutdown rpc client, set status to shutdown
+2026-02-13 23:35:39 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@1a05d5cd[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+2026-02-13 23:35:39 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Close current connection 1770996562496_192.168.65.1_39236
+2026-02-13 23:35:39 [nacos-grpc-client-executor-166] INFO  c.a.n.c.r.client.grpc.GrpcClient - [1770996562496_192.168.65.1_39236]Ignore complete event,isRunning:false,isAbandon=false
+2026-02-13 23:35:39 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client.grpc.GrpcClient - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@1495c01a[Running, pool size = 9, active threads = 1, queued tasks = 0, completed tasks = 166]
+2026-02-13 23:35:48 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 4e6c038d-a7cb-4e50-b486-1940e19f7be2_config-0
+2026-02-13 23:35:48 [main] INFO  org.reflections.Reflections - Reflections took 45 ms to scan 1 urls, producing 3 keys and 6 values 
+2026-02-13 23:35:48 [main] INFO  org.reflections.Reflections - Reflections took 16 ms to scan 1 urls, producing 4 keys and 9 values 
+2026-02-13 23:35:48 [main] INFO  org.reflections.Reflections - Reflections took 13 ms to scan 1 urls, producing 3 keys and 10 values 
+2026-02-13 23:35:48 [main] INFO  org.reflections.Reflections - Reflections took 139 ms to scan 163 urls, producing 0 keys and 0 values 
+2026-02-13 23:35:48 [main] INFO  org.reflections.Reflections - Reflections took 16 ms to scan 1 urls, producing 1 keys and 5 values 
+2026-02-13 23:35:48 [main] INFO  org.reflections.Reflections - Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+2026-02-13 23:35:48 [main] INFO  org.reflections.Reflections - Reflections took 19 ms to scan 1 urls, producing 2 keys and 8 values 
+2026-02-13 23:35:48 [main] INFO  org.reflections.Reflections - Reflections took 90 ms to scan 163 urls, producing 0 keys and 0 values 
+2026-02-13 23:35:48 [main] INFO  c.alibaba.nacos.common.remote.client - [4e6c038d-a7cb-4e50-b486-1940e19f7be2_config-0] RpcClient init label, labels = {module=config, Vipserver-Tag=null, source=sdk, Amory-Tag=null, Location-Tag=null, taskId=0, AppName=unknown}
+2026-02-13 23:35:48 [main] INFO  c.alibaba.nacos.common.remote.client - [4e6c038d-a7cb-4e50-b486-1940e19f7be2_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$329/1576277927
+2026-02-13 23:35:48 [main] INFO  c.alibaba.nacos.common.remote.client - [4e6c038d-a7cb-4e50-b486-1940e19f7be2_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$330/2080643905
+2026-02-13 23:35:48 [main] INFO  c.alibaba.nacos.common.remote.client - [4e6c038d-a7cb-4e50-b486-1940e19f7be2_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2026-02-13 23:35:48 [main] INFO  c.alibaba.nacos.common.remote.client - [4e6c038d-a7cb-4e50-b486-1940e19f7be2_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2026-02-13 23:35:48 [main] INFO  c.alibaba.nacos.common.remote.client - [4e6c038d-a7cb-4e50-b486-1940e19f7be2_config-0] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+2026-02-13 23:35:49 [main] INFO  c.alibaba.nacos.common.remote.client - [4e6c038d-a7cb-4e50-b486-1940e19f7be2_config-0] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1770996949205_192.168.65.1_43287
+2026-02-13 23:35:49 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [4e6c038d-a7cb-4e50-b486-1940e19f7be2_config-0] Notify connected event to listeners.
+2026-02-13 23:35:49 [main] INFO  c.alibaba.nacos.common.remote.client - [4e6c038d-a7cb-4e50-b486-1940e19f7be2_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2026-02-13 23:35:49 [main] INFO  c.alibaba.nacos.common.remote.client - [4e6c038d-a7cb-4e50-b486-1940e19f7be2_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$339/1272753974
+2026-02-13 23:35:49 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[nebulamall-search] & group[DEFAULT_GROUP]
+2026-02-13 23:35:49 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[nebulamall-search.properties] & group[DEFAULT_GROUP]
+2026-02-13 23:35:49 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-nebulamall-search.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-nebulamall-search,DEFAULT_GROUP'}]
+2026-02-13 23:35:49 [main] INFO  c.e.n.search.NebulaSearchApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-13 23:35:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2026-02-13 23:35:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 1 Elasticsearch repository interfaces.
+2026-02-13 23:35:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2026-02-13 23:35:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2026-02-13 23:35:50 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=279df63b-9b49-324c-869a-82e787189a48
+2026-02-13 23:35:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10007 (http)
+2026-02-13 23:35:50 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-13 23:35:50 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2026-02-13 23:35:51 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-13 23:35:51 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1406 ms
+2026-02-13 23:35:51 [main] WARN  o.s.d.e.c.m.SimpleElasticsearchPersistentProperty - Unsupported type 'class java.lang.Long' for date property 'createTime'.
+2026-02-13 23:35:51 [main] WARN  o.s.d.e.c.m.SimpleElasticsearchPersistentProperty - Unsupported type 'class java.lang.Long' for date property 'updateTime'.
+2026-02-13 23:35:52 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-02-13 23:35:53 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 9a193120-bb72-4a95-b0f4-5793270b2ec6
+2026-02-13 23:35:53 [main] INFO  c.alibaba.nacos.common.remote.client - [9a193120-bb72-4a95-b0f4-5793270b2ec6] RpcClient init label, labels = {module=naming, source=sdk}
+2026-02-13 23:35:53 [main] INFO  c.alibaba.nacos.common.remote.client - [9a193120-bb72-4a95-b0f4-5793270b2ec6] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2026-02-13 23:35:53 [main] INFO  c.alibaba.nacos.common.remote.client - [9a193120-bb72-4a95-b0f4-5793270b2ec6] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2026-02-13 23:35:53 [main] INFO  c.alibaba.nacos.common.remote.client - [9a193120-bb72-4a95-b0f4-5793270b2ec6] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2026-02-13 23:35:53 [main] INFO  c.alibaba.nacos.common.remote.client - [9a193120-bb72-4a95-b0f4-5793270b2ec6] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+2026-02-13 23:35:53 [main] INFO  c.alibaba.nacos.common.remote.client - [9a193120-bb72-4a95-b0f4-5793270b2ec6] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1770996953171_192.168.65.1_21766
+2026-02-13 23:35:53 [main] INFO  c.alibaba.nacos.common.remote.client - [9a193120-bb72-4a95-b0f4-5793270b2ec6] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2026-02-13 23:35:53 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [9a193120-bb72-4a95-b0f4-5793270b2ec6] Notify connected event to listeners.
+2026-02-13 23:35:53 [main] INFO  c.alibaba.nacos.common.remote.client - [9a193120-bb72-4a95-b0f4-5793270b2ec6] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$339/1272753974
+2026-02-13 23:35:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10007 (http) with context path ''
+2026-02-13 23:35:53 [main] INFO  c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP nebulamall-search 127.0.0.1:10007 register finished
+2026-02-13 23:35:53 [main] INFO  c.e.n.search.NebulaSearchApplication - Started NebulaSearchApplication in 6.585 seconds (JVM running for 7.408)
+2026-02-13 23:35:53 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=nebulamall-search.properties, group=DEFAULT_GROUP
+2026-02-13 23:35:53 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=nebulamall-search, group=DEFAULT_GROUP
+2026-02-13 23:35:53 [nacos-grpc-client-executor-10] INFO  c.alibaba.nacos.common.remote.client - [9a193120-bb72-4a95-b0f4-5793270b2ec6] Receive server push request, request = NotifySubscriberRequest, requestId = 4
+2026-02-13 23:35:53 [nacos-grpc-client-executor-10] INFO  c.alibaba.nacos.common.remote.client - [9a193120-bb72-4a95-b0f4-5793270b2ec6] Ack server push request, request = NotifySubscriberRequest, requestId = 4
